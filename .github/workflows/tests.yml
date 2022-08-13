@@ -104,7 +104,7 @@ jobs:
     - name: Install Dependencies (Linux)
       if: startsWith( matrix.os, 'ubuntu' )
       run: |
-        sudo apt-get -y install fuse bzip2 pbzip2 pixz zstd unar
+        sudo apt-get -y install fuse bzip2 pbzip2 pixz zstd unar libarchive-dev
         set -x
 
     - name: Install Dependencies (MacOS)
