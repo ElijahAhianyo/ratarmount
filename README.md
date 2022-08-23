@@ -130,11 +130,10 @@ python3 -m pip install --user cffi  # Necessary because of missing pyprojects.to
 python3 -m pip install --user lzmaffi
 ```
 
-Similar notes apply to the libarchive backend. Because, currently reliable wheels are missing, it has to be installed explicitly:
+Similar notes apply to the libarchive backend. It has to be installed explicitly:
 
 ```bash
-sudo apt install libarchive-dev  # Debian, Ubuntu, ...
-python3 -m pip install --user python-libarchive
+python3 -m pip install --user python-libarchive>=4.2.0
 ```
 
 
