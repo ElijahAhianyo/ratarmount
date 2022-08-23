@@ -38,7 +38,7 @@ class LibarchiveFile(io.RawIOBase):
     def close(self) -> None:
         # Close on the file object unexpectedly closes the whole archive!
         # https://github.com/smartfile/python-libarchive/issues/23
-        #self.fileobj.close()
+        # self.fileobj.close()
         pass
 
     @overrides(io.RawIOBase)
